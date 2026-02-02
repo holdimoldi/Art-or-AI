@@ -375,13 +375,13 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* 1. Header anpassen */
+    /* 1. Header Adjustments */
     header h1 {
-        font-size: 1.5em; /* Kleinerer Titel */
+        font-size: 1.4em;
         padding: 0 10px;
     }
     
-    /* Buttons im Header kleiner machen */
+    /* Buttons smaller in header */
     #language-toggle, #fullscreen-toggle {
         padding: 8px 12px;
         font-size: 0.8em;
@@ -390,12 +390,12 @@ footer {
     #language-toggle { left: 10px; }
     #fullscreen-toggle { right: 10px; }
 
-    /* 2. Layout der Bilder: Untereinander statt nebeneinander */
+    /* Stack images vertically */
     #side-by-side-wrapper {
         flex-direction: column; /* WICHTIG: Stapelt die Elemente */
         align-items: center;
         gap: 20px;
-        padding-bottom: 120px; /* Mehr Platz unten für die Buttons */
+        padding-bottom: 140px; /* Extra space so buttons don't cover content */
     }
 
     .image-pair {
@@ -405,15 +405,15 @@ footer {
     }
 
     .image-wrapper {
-        max-width: 100%; /* Bilder nutzen die volle Breite */
+        max-width: 100%;
         width: 100%;
         margin-bottom: 15px;
     }
 
-    /* 3. Hover-Effekt auf Touchscreens deaktivieren */
+    /* 3. Disable hover zoom (it's annoying on touchscreens) */
     .image-wrapper:not(.disabled):hover img {
-        transform: none; /* Kein Zoom, da es auf Handys irritiert */
-        border-color: white; /* Rahmen bleibt weiß bis zum Klick */
+        transform: none; /* No Zoom, irritating on mobile phones */
+        border-color: white; /* frame stays white */
     }
 
     /* 4. Feedback-Bereich (Lösungstext) */
@@ -425,9 +425,9 @@ footer {
 
     /* 5. Buttons aufräumen (Das Wichtigste!) */
     
-    /* Score-Anzeige: Nicht mehr fixiert unten, sondern normal im Fluss */
+    /* Reposition Buttons for Thumb Reach */
     .score-display {
-        position: static; /* Löst die Fixierung */
+        position: static; /* Move it from the corner to the top flow */
         margin: 10px auto;
         transform: none;
         width: 90%;
@@ -437,14 +437,15 @@ footer {
     /* "Nächste Frage"-Button: Groß und unten fixiert */
     #next-button {
         width: 90%; /* Fast volle Breite */
-        bottom: 20px;
+        left: 5%;
+        bottom: calc(15px + env(safe-area-inset-bottom)); /* Safe Area für iOS */
         padding: 15px;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     /* "Zurück"-Button: Kleiner und oben links oder ausgeblendet */
     #back-button {
-        bottom: 80px; /* Über dem Weiter-Button */
+        bottom: calc(85px + env(safe-area-inset-bottom)); /* Positioned above Next */
         left: 50%;
         transform: translateX(-50%);
         width: 50%;
