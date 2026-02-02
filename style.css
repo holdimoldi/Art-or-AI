@@ -25,6 +25,7 @@ header h1 {
 }
 
 #quiz-container {
+    min-height: 100dvh; /* Reagiert dynamisch auf das Ein/Ausblenden der Safari-Adressleiste */
     text-align: center; 
     max-width: 1200px;
     margin: 20px auto; 
