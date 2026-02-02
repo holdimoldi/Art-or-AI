@@ -1,0 +1,462 @@
+/* --- GLOBAL STYLES & LAYOUT --- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    padding-bottom: 100px; /* Space for the bottom fixed buttons */
+}
+
+/* 1. Header Container */
+header {
+    padding: 40px 0; 
+    text-align: center; 
+    background-color: #e5e8eb; 
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    margin: 0; 
+    font-size: 2.2em; 
+    color: #004284;
+    letter-spacing: 1px;
+}
+
+#quiz-container {
+    text-align: center; 
+    max-width: 1200px;
+    margin: 20px auto; 
+    padding: 0 20px;
+}
+
+#quiz-header-content {
+    width: 100%;
+    text-align: center;
+}
+
+#quiz-header-content h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.question-text {
+    font-size: 1.3em;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* --- UNIFIED BUTTON THEME (Fixed Elements) --- */
+
+.score-display, 
+#next-button, 
+#back-button,
+#language-toggle,
+#fullscreen-toggle {
+    background-color: #004284;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px; 
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: fixed; 
+    text-decoration: none;
+    z-index: 1000;
+}
+
+/* Unified Hover Effect */
+.score-display:hover, 
+#next-button:hover, 
+#back-button:hover,
+#language-toggle:hover,
+#fullscreen-toggle:hover {
+    background-color: #004284;
+    transform: scale(1.05); 
+}
+
+/* Special Case for Next Button centering on hover */
+#next-button:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* --- INDIVIDUAL FIXED POSITIONS --- */
+
+#language-toggle {
+    top: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    font-size: 1em;
+    z-index: 2000;
+}
+
+#fullscreen-toggle {
+    top: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    font-size: 1em;
+    z-index: 2000; 
+}
+
+.score-display {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    font-size: 1em;
+}
+
+#back-button {
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    font-size: 1em;
+}
+
+#next-button {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 12px 40px; 
+    font-size: 1.2em;
+    z-index: 1001;
+}
+
+#next-button.hidden,
+#back-button.hidden,
+.hidden {
+    display: none !important;
+}
+
+/* --- SIDE-BY-SIDE LAYOUT --- */
+
+#side-by-side-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 40px; 
+    margin: 20px auto; 
+    padding: 40px 0; /* Extra space for zoom scaling */
+}
+
+.image-pair {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1; 
+    max-width: 900px; 
+}
+
+.image-wrapper {
+    max-width: 45%; 
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease;
+    z-index: 1; /* Default stack order */
+}
+
+.image-pair img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    max-height: 400px; 
+    object-fit: contain; 
+    border: 6px solid white; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, border-color 0.3s ease, box-shadow 0.4s ease;
+}
+
+/* --- NEW: IMAGE HOVER ZOOM LOGIC --- */
+
+.image-wrapper:not(.disabled):hover {
+    z-index: 500; /* Pop to front when hovering */
+}
+
+.image-wrapper:not(.disabled):hover img {
+    transform: scale(1.4); /* Zoom factor */
+    border-color: #004284;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    cursor: zoom-in;
+}
+
+/* Avoid overlap issues once an image is disabled/answered */
+.image-wrapper.disabled {
+    cursor: default;
+}
+
+/* --- FEEDBACK AREA & ATTRIBUTION --- */
+
+#feedback-area {
+    max-width: 300px; 
+    flex-shrink: 0; 
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.info-section {
+    margin-top: 15px; 
+    padding-top: 10px; 
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.info-block {
+    margin-bottom: 20px;
+}
+
+.attribution {
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #666;
+    border-left: 2px solid #004284;
+    padding-left: 8px;
+}
+
+.attribution a {
+    color: #004284;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+.is-correct { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.is-incorrect { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+/* --- POST-SELECTION BORDERS --- */
+
+.image-wrapper.user-correct-choice img { border-color: #28a745 !important; transform: none !important; }
+.image-wrapper.user-incorrect-choice img { border-color: #dc3545 !important; transform: none !important; }
+.image-wrapper.ai-solution img { border-color: #8b0000 !important; }
+.image-wrapper.original-solution img { border-color: #ffd700 !important; }
+
+/* --- FINISH SCREEN --- */
+
+.finish-screen {
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    text-align: center; 
+    padding: 20px 0;
+    margin-top: 40px; 
+    background-color: #f4f4f4;
+    color: #888;
+}
+/* --- EXIT BUTTON STYLES --- */
+
+.exit-button-style {
+    background-color: #f44336 !important;
+    color: white !important;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    
+    /* Festgelegte Position unten rechts */
+    position: fixed;
+    bottom: 80px; /* Über dem Scoreboard (20px + ca. 60px Höhe) */
+    right: 20px;
+    z-index: 2000;
+    
+    padding: 12px 18px;
+    min-width: 160px; /* Gleiche Mindestbreite wie Scoreboard */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Animation */
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.exit-button-style.visible {
+    opacity: 1;
+}
+
+.exit-button-style:hover {
+    background-color: #d32f2f !important;
+    transform: scale(1.05);
+}
+.image-info-overlay {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 0.95em;
+    line-height: 1.4;
+    text-align: center; /* Zentriert den Text */
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    transition: opacity 0.5s ease;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Klasse zum Verstecken der Info vor der Auswahl */
+.hidden-info {
+    display: none;
+}
+
+.image-info-overlay strong {
+    color: #004284;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+/* Die Animation für den Score-Button */
+/* Rotes Schütteln bei falscher Antwort */
+.score-shake {
+    animation: shakeRed 0.5s ease;
+}
+
+@keyframes shakeRed {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); background-color: #dc3545; color: white !important; }
+    40%, 80% { transform: translateX(5px); background-color: #dc3545; color: white !important; }
+}
+
+/* Bestehende grüne Animation zur Sicherheit hier nochmal */
+.score-bounce {
+    animation: bounceGreen 0.6s ease;
+}
+
+@keyframes bounceGreen {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.1); background-color: #28a745; color: white !important; }
+    100% { transform: scale(1); }
+}
+#progress-container {
+    display: none; /* Standardmäßig ausgeblendet */
+    width: 100%;
+    max-width: 800px;
+    height: 15px;
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden; /* Wichtig, damit der Balken innen bleibt */
+    border: 1px solid #ccc;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%; /* Startwert */
+    background-color: #004284; /* Deine Markenfarbe */
+    transition: width 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Elastischer Effekt */
+}
+/* --- MOBILE / RESPONSIVE STYLES --- */
+
+@media (max-width: 768px) {
+
+    /* 1. Header anpassen */
+    header h1 {
+        font-size: 1.5em; /* Kleinerer Titel */
+        padding: 0 10px;
+    }
+    
+    /* Buttons im Header kleiner machen */
+    #language-toggle, #fullscreen-toggle {
+        padding: 8px 12px;
+        font-size: 0.8em;
+        top: 10px;
+    }
+    #language-toggle { left: 10px; }
+    #fullscreen-toggle { right: 10px; }
+
+    /* 2. Layout der Bilder: Untereinander statt nebeneinander */
+    #side-by-side-wrapper {
+        flex-direction: column; /* WICHTIG: Stapelt die Elemente */
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 120px; /* Mehr Platz unten für die Buttons */
+    }
+
+    .image-pair {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .image-wrapper {
+        max-width: 100%; /* Bilder nutzen die volle Breite */
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* 3. Hover-Effekt auf Touchscreens deaktivieren */
+    .image-wrapper:not(.disabled):hover img {
+        transform: none; /* Kein Zoom, da es auf Handys irritiert */
+        border-color: white; /* Rahmen bleibt weiß bis zum Klick */
+    }
+
+    /* 4. Feedback-Bereich (Lösungstext) */
+    #feedback-area {
+        max-width: 100%;
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    /* 5. Buttons aufräumen (Das Wichtigste!) */
+    
+    /* Score-Anzeige: Nicht mehr fixiert unten, sondern normal im Fluss */
+    .score-display {
+        position: static; /* Löst die Fixierung */
+        margin: 10px auto;
+        transform: none;
+        width: 90%;
+        order: -1; /* Schiebt Score im Flex-Container nach oben (falls möglich) */
+    }
+
+    /* "Nächste Frage"-Button: Groß und unten fixiert */
+    #next-button {
+        width: 90%; /* Fast volle Breite */
+        bottom: 20px;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+    /* "Zurück"-Button: Kleiner und oben links oder ausgeblendet */
+    #back-button {
+        bottom: 80px; /* Über dem Weiter-Button */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    /* Exit Button */
+    .exit-button-style {
+        bottom: auto; /* Fixierung unten lösen */
+        top: 60px;    /* Nach oben schieben */
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 0.8em;
+        min-width: auto;
+    }
+}
