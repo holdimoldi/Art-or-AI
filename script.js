@@ -506,5 +506,6 @@ function updateProgressBar() {
         progressBar.style.width = progress + "%";
     }
 }
+// Just a comment.
 
 window.onload = loadQuizData;
