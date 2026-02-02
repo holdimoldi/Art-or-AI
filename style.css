@@ -129,6 +129,7 @@ header h1 {
     padding: 12px 40px; 
     font-size: 1.2em;
     z-index: 1001;
+    bottom: calc(20px + env(safe-area-inset-bottom)); /* Safe Area für iOS */
 }
 
 #next-button.hidden,
