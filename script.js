@@ -4,7 +4,7 @@ let score = 0;
 let userAnswers = []; 
 let currentLanguage = 'en';
 let isQuizFinished = false;
-let isModeSelected = false; // Trackt, ob bereits ein Modus gewählt wurde
+let isModeSelected = false; // Tracks whether a mode has already been selected
 
 const translations = {
     en: {
@@ -56,9 +56,9 @@ const translations = {
         aiLabel: "KI",
         finishTitle: "Quiz beendet!",
         restart: "Neustart",
-        expert: "Über 90 % richtig – Du bist ein KI-Experte!", // Geändert von "Sie sind"
-        advanced: "Gute Arbeit! Du hast ein scharfes Auge für digitale Details.", // Geändert von "Sie haben"
-        study: "Unter 70 % – Du solltest bei digitalen Elementen vorsichtiger sein und dich intensiver mit KI-Werken beschäftigen.", // Geändert von "Sie sollten"
+        expert: "Über 90 % richtig – Du bist ein KI-Experte!",
+        advanced: "Gute Arbeit! Du hast ein scharfes Auge für digitale Details.",
+        study: "Unter 70 % – Du solltest bei digitalen Elementen vorsichtiger sein und dich intensiver mit KI-Werken beschäftigen.",
         modelLabel: "Modell",
         dateLabel: "Erstellt am",
         promptLabel: "Prompt von",
@@ -87,7 +87,7 @@ function toggleLanguage() {
     if (isQuizFinished) {
         renderFinishScreen();
     } else if (!isModeSelected) {
-        // Wenn noch kein Modus gewählt wurde, zeige wieder die Auswahl
+        // If no mode has been selected yet, show the selection again.
         showModeSelection();
     } else if (currentQuestionIndex < quizData.length) {
         displayQuestion();
@@ -117,7 +117,7 @@ async function loadQuizData() {
         shuffleArray(quizData);
         document.getElementById('loading-message').style.display = 'none';
 
-        // Neu: Erst den Modus wählen lassen
+        // New: Let the user select the mode first.
         showModeSelection();
     } catch (e) { console.error("Error loading quiz data:", e); }
 }
@@ -127,13 +127,13 @@ function showModeSelection() {
     const container = document.getElementById('quiz-header-content');
     const pair = document.querySelector('.image-pair');
 
-    // Neu: Fortschrittsbalken-Container verstecken
+    // New: Hide progress bar container
     const progressContainer = document.getElementById('progress-container');
     if (progressContainer) {
         progressContainer.style.display = 'none';
     }
     
-    // Verstecke die Steuerungselemente während der Auswahl
+    // Hide controls during selection
     document.getElementById('back-button').classList.add('hidden');
     document.getElementById('next-button').classList.add('hidden');
 
@@ -150,21 +150,21 @@ function showModeSelection() {
 }
 
 function startQuiz(amount) {
-    // RESET der Spielstände für die neue Runde
-    score = 0; 
+    // RESET scores for the new round
+    score = 0;
     currentQuestionIndex = 0;
     userAnswers = [];
     isQuizFinished = false;
 
-    // NEU: Fortschrittsbalken-Container wieder einblenden
+    // NEW: Reshow progress bar container
     const progressContainer = document.getElementById('progress-container');
     if (progressContainer) {
-        progressContainer.style.display = 'block'; // Sichtbar machen des Fortschrittsbalkens
+        progressContainer.style.display = 'block'; // Making the progress bar visible
     }
 
-    // Kürze das Array auf die gewählte Anzahl
-    isModeSelected = true; // Modus wurde gewählt
-    quizData = quizData.slice(0, amount); // Begrenzt die Fragen auf die Wahl
+    // Shorten the array to the selected count
+    isModeSelected = true; // Mode has been selected
+    quizData = quizData.slice(0, amount); // Limit the questions to the selection
     displayQuestion();
 }
 
@@ -173,31 +173,31 @@ function displayQuestion() {
     const t = translations[currentLanguage];
     const feedbackArea = document.getElementById('feedback-area');
 
-    // Prüfen, ob die Frage bereits beantwortet wurde
+    // Check if the question has already been answered
     const alreadyAnswered = userAnswers[currentQuestionIndex] !== undefined && userAnswers[currentQuestionIndex] !== null;
     feedbackArea.classList.toggle('hidden', !alreadyAnswered);
 
-    // --- NAVIGATION BUTTONS LOGIK ---
+    // --- NAVIGATION BUTTONS LOGIC ---
 const nextBtn = document.getElementById('next-button');
 const backBtn = document.getElementById('back-button');
 
-// 1. Prüfen: Ist dies die letzte Frage?
+// 1. Check: Is this the last question?
 const isLastQuestion = (currentQuestionIndex === quizData.length - 1);
 
-// 2. Button-Text festlegen (VOR der Sichtbarkeits-Logik)
+// 2. Set button text (BEFORE visibility logic)
 if (isLastQuestion) {
-    nextBtn.innerText = t.finishBtn; // Nutzt "Ergebnis anzeigen 🏁"
-    nextBtn.style.backgroundColor = "#28a745"; // Grün für den Abschluss
+    nextBtn.innerText = t.finishBtn; // Use 'Show result 🏁'"
+    nextBtn.style.backgroundColor = "#28a745"; // Green for completion
 } else {
-    nextBtn.innerText = t.nextBtn;   // Nutzt "Nächste Frage"
-    nextBtn.style.backgroundColor = "#004284"; // Standard-Blau
+    nextBtn.innerText = t.nextBtn;   // Use 'Next question'
+    nextBtn.style.backgroundColor = "#004284"; // Standard blue
 }
 
-// 3. Sichtbarkeit steuern
-// Zeige Next/Finish-Button nur, wenn bereits geantwortet wurde
+// 3. Control visibility
+// Show Next/Finish button only if the question has been answered
 nextBtn.classList.toggle('hidden', !alreadyAnswered);
 
-// Zurück-Button übersetzen und Sichtbarkeit (nicht bei Frage 1)
+// Translate Back button and visibility (not on question 1)
 backBtn.innerText = t.backBtn;
 backBtn.classList.toggle('hidden', currentQuestionIndex === 0);
 
@@ -221,7 +221,7 @@ backBtn.classList.toggle('hidden', currentQuestionIndex === 0);
         if (btn) btn.classList.add('visible');
     }, 100);
 
-    // FIX 1: Bilder NUR mischen, wenn sie noch nicht für diese Frage im Speicher liegen
+    // Conditional shuffle: Skip if images exist in memory
     if (!q.shuffledImages) {
         const isA_AI = (q.solution_ai_image === 'left');
         q.shuffledImages = shuffleArray([
@@ -233,29 +233,29 @@ backBtn.classList.toggle('hidden', currentQuestionIndex === 0);
     renderImages(q);
     updateProgressBar();
 
-   // Zustand nach der Beantwortung wiederherstellen
+   // Restore state after answering
     if (alreadyAnswered) {
         updateFeedbackContent();
         document.querySelectorAll('.image-wrapper').forEach(el => {
             el.style.cursor = "default"; 
             
-            // Diese Zeile sucht das Info-Fenster im aktuellen Bild
+            // Find info window in current image
             const overlay = el.querySelector('.image-info-overlay'); 
             
-            // Und diese Zeile macht es sichtbar
+            // And this line toggles its visibility to 'on'
             if (overlay) {
                 overlay.classList.remove('hidden-info');
             }
         });
     }
-    updateProgressBar(); // Fortschrittsbalken aktualisieren
+    updateProgressBar(); // "Update progress bar
 }
 
 function renderImages(q) {
     const pair = document.querySelector('.image-pair');
     const t = translations[currentLanguage];
     
-    // FIX 3: Nutze IMMER q.shuffledImages statt hier neu zu mischen
+    // ALWAYS use q.shuffledImages instead of reshuffling here
     pair.innerHTML = q.shuffledImages.map(img => {
         const label = img.isAI ? (currentLanguage === 'de' ? "KI-Bild:" : "AI Image:") : (t.originalLabel + ":");
         const infoText = img.isAI ? q['info_ai_' + currentLanguage] : q['info_original_' + currentLanguage];
@@ -271,7 +271,7 @@ function renderImages(q) {
         `;
     }).join('');
 
-    // FIX 4: Event-Listener nur hinzufügen, wenn noch NICHT geantwortet wurde
+    // Only add event listeners if not YET answered
     const alreadyAnswered = userAnswers[currentQuestionIndex] !== undefined && userAnswers[currentQuestionIndex] !== null;
     if (!alreadyAnswered) {
         document.querySelectorAll('.image-wrapper').forEach(el => {
@@ -284,19 +284,18 @@ function translateLicense(license, lang) {
     if (!license) return "";
     const t = translations[lang];
     
-    // Zuerst "Public Domain" prüfen
+    // Check 'Public Domain' first
     if (license.toLowerCase() === "public domain") return t.pdLabel;
 
-    // Den speziellen Gesetzesverweis ersetzen
-    // Dies sucht nach dem Muster "EU AI Act Art. 50" und ersetzt es komplett
+    // Identify and replace the 'EU AI Act Art. 50' pattern
     let translated = license.replace("EU AI Act Art. 50", t.aiActLabel);
     
-    // Wenn die Sprache Deutsch ist, spezifische Begriffe ersetzen
+    // Conditional replacement for German language strings
     if (lang === 'de') {
         return translated
-            .replace("AI", "KI")             // Ersetzt AI durch KI
-            .replace("compliant", "konform") // Ersetzt compliant durch konform
-            .replace("Generated", "generiert"); // Ersetzt Generated durch generiert
+            .replace("AI", "KI")             // "Replace 'AI' with 'KI'
+            .replace("compliant", "konform") // Replace 'compliant' with 'konform'
+            .replace("Generated", "generiert"); // Replace 'Generated' with 'generiert'
     }
     
     return translated;
@@ -325,7 +324,7 @@ function formatAiAttribution(attr, lang) {
     const promptAuthor = attr.prompt_author || "Martin Hohlt"; 
     const license = translateLicense(attr.license, lang);
 
-    // NEU: Nur die Überschrift und die Liste
+    // Only the heading and the list
     const labelAiSource = lang === 'de' ? 'Bildquelle des KI-Bildes:' : 'Source of the AI Image:';
 
     return `
@@ -346,7 +345,7 @@ function formatOriginalAttribution(attr, lang) {
     const url = attr.source_url || "#";
     const label = lang === 'de' ? 'Bildquelle des Originals:' : 'Source of the Original:';
 
-    // NEU: Nur noch fetter Text und Link
+    // Only bold text and link
     return `
     <div class="attribution">
         <strong>${label}</strong> <a href="${url}" target="_blank">${url}</a>
@@ -361,7 +360,7 @@ function updateFeedbackContent() {
     const originalAttr = formatOriginalAttribution(q.attribution_original, currentLanguage);
     const aiAttr = formatAiAttribution(q.attribution_ai, currentLanguage);
 
-    // Hier wurden die doppelten Info-Texte entfernt
+    // **Duplicate info texts were removed here**
     document.getElementById('feedback-area').innerHTML = `
         <div style="text-align: center; margin-bottom: 20px;">
             <p><strong>${wasCorrect ? t.correct : t.incorrect}</strong></p>
@@ -377,28 +376,28 @@ function updateFeedbackContent() {
     `;
 }
 
-// Hilfsfunktion Update von der Score-Anzeige
+// Helper function to update the score display
 function updateScoreDisplay(isCorrect) {
     const t = translations[currentLanguage];
     const scoreContainer = document.querySelector('.score-display');
     
     if (scoreContainer) {
-        // Text im Button aktualisieren
+        // **Update text in the button**
         scoreContainer.innerHTML = `
             ${t.scoreText}: ${score} / ${quizData.length}
             (${currentQuestionIndex + 1} ${t.of} ${quizData.length})
         `;
 
-        // Animationen triggern
+        // Trigger animations
         scoreContainer.classList.remove('score-bounce', 'score-shake');
         void scoreContainer.offsetWidth; 
         scoreContainer.classList.add(isCorrect ? 'score-bounce' : 'score-shake');
     }
 }
 
-//  Integriere den Aufruf in deine handleAnswer Funktion
+//  Integrate the call into your handleAnswer function
 function handleAnswer(event) {
-    // 1. Sperre: Nur antworten, wenn noch nicht geschehen
+    // **Lock: Only answer if not already done**
     if (userAnswers[currentQuestionIndex] !== undefined && userAnswers[currentQuestionIndex] !== null) {
         return;
     }
@@ -406,38 +405,38 @@ function handleAnswer(event) {
     const isAi = event.currentTarget.getAttribute('data-is-ai') === "true";
     userAnswers[currentQuestionIndex] = isAi;
     
-    // 2. Score Logik
+    // **Score logic**
     if (isAi) {
         score++;
     }
     
-    // 3. Score-Anzeige SOFORT aktualisieren & animieren
+    // **Update & animate score display IMMEDIATELY**
     updateScoreDisplay(isAi);
 
-    // 4. Feedback-Bereich einblenden
+    // **Show feedback area**
     const feedbackArea = document.getElementById('feedback-area');
     if (feedbackArea) {
         feedbackArea.classList.remove('hidden');
     }
 
-    // 5. Info-Texte UNTER den Bildern einblenden (Wichtig!)
+    // Show info texts BELOW the images (Important!)
     document.querySelectorAll('.image-info-overlay').forEach(el => {
         el.classList.remove('hidden-info');
     });
 
-    // 6. Klicks auf Bilder verhindern (Cursor ändern)
+    // **Disable further clicks on images**
     document.querySelectorAll('.image-wrapper').forEach(el => {
         el.style.cursor = "default";
     });
 
-    // 7. Buttons und Texte aktualisieren
-    updateFeedbackContent(); // Schreibt "Richtig" oder "Falsch" in die Feedback Area
+    // **Update buttons and texts**
+    updateFeedbackContent(); // **Write "Correct" or "Incorrect" into the feedback area**
     
     const nextBtn = document.getElementById('next-button');
     if (nextBtn) {
         nextBtn.classList.remove('hidden');
     }
-    // NEU: Sofort den Fortschrittsbalken aktualisieren
+    // **Update the progress bar immediately**
     updateProgressBar();
 }
 function shuffleArray(arr) {
@@ -452,9 +451,7 @@ function prevQuestion() {
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         updateProgressBar();
-        // Die Zeilen zum Score-Abzug und userAnswers = null wurden entfernt!
-        /*if (userAnswers[currentQuestionIndex]) score--;
-        userAnswers[currentQuestionIndex] = null; */
+        // **The lines for score deduction and userAnswers = null were removed!**
         document.getElementById('feedback-area').innerHTML = "";
         displayQuestion();
     }
@@ -477,7 +474,7 @@ function renderFinishScreen() {
     const percentage = (score / quizData.length) * 100;
     let motivationalMsg = (percentage >= 90) ? t.expert : (percentage >= 70 ? t.advanced : t.study);
 
-    // Wir formatieren die Prozentzahl auf eine Nachkommastelle
+    // **We format the percentage to one decimal place**
     const formattedPercentage = percentage.toFixed(1).replace('.', ',');
 
     document.getElementById('quiz-container').innerHTML = `
@@ -494,13 +491,13 @@ function renderFinishScreen() {
 }
 function updateProgressBar() {
     const progressBar = document.getElementById('progress-bar');
-    // Wir nehmen nur den Index. Bei Frage 1 (Index 0) ist der Fortschritt 0%.
+    // **We only use the index. For Question 1 (Index 0), the progress is 0%.**
     if (progressBar && quizData.length > 0) {
-        // Wir zählen, wie viele Antworten im Array existieren und nicht 'null/undefined' sind
+        // **We count how many answers exist in the array and are not 'null/undefined'**
         const answeredQuestions = userAnswers.filter(ans => ans !== undefined && ans !== null).length;
         
-        // Formel: (Aktueller Index / Gesamtanzahl) * 100
-        // Bei Frage 1 (Index 0) ergibt das 0%.
+        // Formula: (Current index / Total count) * 100**
+        // For Question 1 (Index 0), this results in 0%.**
         const progress = (answeredQuestions / quizData.length) * 100;
 
         progressBar.style.width = progress + "%";

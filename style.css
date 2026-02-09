@@ -407,7 +407,7 @@ footer {
         margin-bottom: 15px;
     }
 
-    /* 3. Disable hover zoom (it's annoying on touchscreens) */
+    /*Disable hover zoom (it's annoying on touchscreens) */
     .image-wrapper:not(.disabled):hover img {
         transform: none; /* No Zoom, irritating on mobile phones */
         border-color: white; /* frame stays white */
