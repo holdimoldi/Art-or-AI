@@ -764,4 +764,37 @@
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
   }
+  {
+    "id": 24,
+    "country_en": "Luxembourg",
+    "country_de": "Luxemburg",
+    "category_en": "Architecture",
+    "category_de": "Architektur",
+    "image_a_path": "images/Original_Luxembourg_Architecture_Philharmonie_Luxembourg.webp",
+    "image_b_path": "images/AI_Luxembourg_Architecture_ChatGPT.webp",
+    "solution_ai_image": "right",
+    "info_original_en": "The Philharmonie Luxembourg, designed by Christian de Portzamparc, is a modern concert hall that opened in 2005. Its unique architecture features a striking facade of white concrete and glass, with an interior designed to provide excellent acoustics for classical music performances.",
+    "info_original_de": "Die Philharmonie Luxembourg, entworfen von Christian de Portzamparc, ist ein modernes Konzerthaus, das 2005 eröffnet wurde. Ihre einzigartige Architektur zeichnet sich durch eine markante Fassade aus weißem Beton und Glas aus, mit einem Innenraum, der für hervorragende Akustik bei klassischen Musikaufführungen gestaltet ist.",
+    "info_ai_en": "AI often struggles to accurately replicate the complex geometry and unique materials of the Philharmonie Luxembourg. Look for inconsistencies in the facade's texture and the interior's acoustical design, which may appear oversimplified or distorted.",
+    "info_ai_de": "Die KI hat oft Schwierigkeiten, die komplexe Geometrie und die einzigartigen Materialien der Philharmonie Luxembourg genau zu replizieren. Achte auf Unstimmigkeiten in der Textur der Fassade und im akustischen Design des Innenraums, die möglicherweise übermäßig vereinfacht oder verzerrt erscheinen.",
+    "attribution_original": {
+      "author": "Christian de Portzamparc",
+      "title_de": "Philharmonie Luxembourg",
+      "title_en": "Philharmonie Luxembourg",
+      "license": "VT98Fan, CC BY-SA 3.0",
+      "source_url": "https://de.wikipedia.org/w/index.php?curid=8253503"
+    },
+    "attribution_ai": {
+      "full_prompt_en": "Create an AI Image of the architecture of the Philharmonie Luxembourg",
+      "full_prompt_de": "Erstelle ein KI-Bild der Architektur der Philharmonie Luxembourg",
+      "author": "Google",
+      "model": "DALL-E 3 (via ChatGPT)",
+      "version": "OpenAI Image Generation Model",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-02-09T15:54:52",
+      "title_de": "KI Philharmonie Luxembourg Interpretation",
+      "title_en": "AI Philharmonie Luxembourg Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
+    }
+  }
 ]
