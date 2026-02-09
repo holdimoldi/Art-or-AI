@@ -1,7 +1,7 @@
 let quizData = [];
 let currentQuestionIndex = 0;
 let score = 0;
-let userAnswers = []; 
+let userAnswers = []; // Stores user selections for each question
 let currentLanguage = 'en';
 let isQuizFinished = false;
 let isModeSelected = false; // Tracks whether a mode has already been selected
