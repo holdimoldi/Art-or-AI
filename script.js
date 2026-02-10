@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let quizData = [];
 let currentQuestionIndex = 0;
 let score = 0;
@@ -1015,6 +1014,4 @@ function updateProgressBar() {
         progressBar.style.width = progress + "%";
     }
 }
-
->>>>>>> 231135e38e8488f142b880dfad762c026540207d
 window.onload = loadQuizData;
