@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,4 +45,46 @@
 
     <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art or AI? – The EU Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <button id="language-toggle" onclick="toggleLanguage()">🇩🇪 Deutsch</button>
+        <h1 id="main-title">Art or AI? – The EU-AI-Quiz</h1>
+        <button id="fullscreen-toggle" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+    </header>
+
+    <main id="quiz-container">
+        <div id="loading-message">Loading quiz data...</div>
+        <div id="quiz-header-content"></div>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="side-by-side-wrapper">
+            <div class="image-pair"></div> 
+            <div id="feedback-area" class="hidden"></div>
+        </div>
+
+        <button id="back-button" class="hidden" onclick="prevQuestion()">⬅ Go Back</button>
+        <button id="next-button" class="hidden" onclick="nextQuestion()">Next Question</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 M2C Project</p>
+        <p id="footer-desc">A project combining European culture and generative AI evaluation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+>>>>>>> 231135e38e8488f142b880dfad762c026540207d
 </html>
