@@ -796,5 +796,39 @@
       "title_en": "AI Philharmonie Luxembourg Interpretation",
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
+  },
+  {
+    "id": 25,
+    "country_en": "Denmark",
+    "country_de": "Dänemark",
+    "category_en": "Painting",
+    "category_de": "Gemälde",
+    "image_a_path": "images/Original_Denmark_Painting_Krøyer_Sommeraften_Skagen_Sønderstrand.webp",
+    "image_b_path": "images/AI_Denmark_Painting_Krøyer_Sommeraften_Skagen_Sønderstrand_ChatGPT.webp",
+    "solution_ai_image": "right",
+    "info_original_en": "'Summer Evening at Skagen’s Southern Beach' (1893) by Peder Severin Krøyer: In this painting, two women in white dresses walk along the beach at sunset. The warm evening light reflects on the sea and fills the scene with golden colors. The artist wanted to capture the calm and magical feeling of a summer evening by the sea.",
+    "info_original_de": "'Sommerabend am Südstrand von Skagen' (1893) von Peder Severin Krøyer: In diesem Bild aus dem Jahr 1893 gehen zwei Frauen in weißen Kleidern am Strand entlang, während die Sonne untergeht. Das warme Licht spiegelt sich im Meer und taucht alles in goldene Farben. Der Maler Peder Severin Krøyer wollte die besondere Stimmung eines ruhigen Sommerabends am Meer zeigen.",
+    "info_ai_en": "Pay attention to the details in the water and the sky. The AI may struggle to capture the subtle colors and reflections that create the atmosphere of a summer evening. Look for any inconsistencies in the lighting and the way the figures are rendered.",
+    "info_ai_de": "Achte auf die Details im Wasser und im Himmel. Die KI könnte Schwierigkeiten haben, die subtilen Farben und Reflexionen einzufangen, die die Atmosphäre eines Sommerabends schaffen. Suche nach Unstimmigkeiten in der Beleuchtung und der Darstellung der Figuren.",
+    "attribution_original": {
+      "author": "Peder Severin Krøyer",
+      "title_de": "Sommerabend am Südstrand von Skagen",
+      "title_en": "Summer Evening at Skagen’s Southern Beach",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=40474421"
+    },
+    "attribution_ai": {
+      "full_prompt_en": "Create an AI Image of the painting 'Summer Evening at Skagen’s Southern Beach' by Peder Severin Krøyer",
+      "full_prompt_de": "Erstelle ein KI-Bild des Gemäldes 'Sommerabend am Südstrand von Skagen' von Peder Severin Krøyer",
+      "author": "OpenAI",
+      "model": "DALL-E",
+      "version": "OpenAI Image Generation Model (2026)",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-02-16T10:39:08",
+      "title_de": "KI Sommerabend am Strand Interpretation",
+      "title_en": "AI Summer Evening at the Beach Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
+    }
+
   }
 ]
