@@ -829,6 +829,38 @@
       "title_en": "AI Summer Evening at the Beach Interpretation",
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
-
+  },
+  {
+    "id": 26,
+    "country_en": "Greece",
+    "country_de": "Griechenland",
+    "category_en": "Architecture",
+    "category_de": "Architektur",
+    "image_a_path": "images/Original_Greece_Painting_The_First_Steps_1893.webp",
+    "image_b_path": "images/AI_Greece_Painting_The_First_Steps_1893_ChatGPT.webp",
+    "solution_ai_image": "right",
+    "info_original_en": "'The First Steps' (1893) by Georgios Jakobides: This painting shows a tender moment where a mother helps her child take their first steps. The warm light and soft colors create a feeling of love and care. The artist wanted to capture the beauty of this important milestone in a child's life.",
+    "info_original_de": "'Die ersten Schritte' (1893) von Georgios Jakobides: Dieses Gemälde zeigt einen zärtlichen Moment, in dem eine Mutter ihrem Kind hilft, die ersten Schritte zu machen. Das warme Licht und die sanften Farben vermitteln ein Gefühl von Liebe und Fürsorge. Der Künstler wollte die Schönheit dieses wichtigen Meilensteins im Leben eines Kindes festhalten.",
+    "info_ai_en": "Pay attention to the details in the figures and the background. The AI may struggle to capture the subtle emotions and the delicate interaction between the mother and child. Look for any inconsistencies in the lighting and the way the figures are rendered.",
+    "info_ai_de": "Achte auf die Details in den Figuren und im Hintergrund. Die KI könnte Schwierigkeiten haben, die subtilen Emotionen und die zarte Interaktion zwischen Mutter und Kind einzufangen. Suche nach Unstimmigkeiten in der Beleuchtung und der Darstellung der Figuren.",
+    "attribution_original": { 
+      "author": "Georgios Jakobides",
+      "title_de": "Die ersten Schritte",
+      "title_en": "The First Steps",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=1302198"
+    },
+    "attribution_ai": {
+      "full_prompt_en": "Name of the painting: 'The First Steps' by artist: Georgios Jakobides. Can you create an AI image of this painting?",
+      "full_prompt_de": "Name des Gemäldes: ‚Die ersten Schritte‘ von dem Künstler Georgios Jakobides. Kannst du ein KI-Bild dieses Gemäldes erstellen?",
+      "author": "OpenAI",
+      "model": "DALL-E",
+      "version": "OpenAI Image Generation Model (2026)",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-02-19T14:12:40",
+      "title_de": "KI Die ersten Schritte Interpretation",
+      "title_en": "AI The First Steps Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
+    }
   }
 ]
