@@ -895,5 +895,38 @@
       "title_en": "AI Parthenon Interpretation",
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
+  },
+  {
+    "id": 28,
+    "country_en": "Austria",
+    "country_de": "Österreich",
+    "category_en": "Painting",
+    "category_de": "Gemälde",
+    "image_a_path": "images/Original_Austria_Painting_The_Kiss_Gustav_Klimt.webp",
+    "image_b_path": "images/AI_Austria_Painting_The_Kiss_Gustav_Klimt_Gemini.webp",
+    "solution_ai_image": "right",
+    "info_original_en": "'The Kiss' (1907-1908) by Gustav Klimt: This iconic painting depicts a couple embracing, surrounded by a golden aura. The intricate patterns and rich colors create a sense of intimacy and passion. Klimt's use of gold leaf adds a luxurious and timeless quality to the artwork.",
+    "info_original_de": "'Der Kuss' (1907-1908) von Gustav Klimt: Dieses ikonische Gemälde zeigt ein Paar in inniger Umarmung, umgeben von einer goldenen Aura. Die kunstvollen Muster und reichen Farben vermitteln ein Gefühl von Intimität und Leidenschaft. Klimts Verwendung von Blattgold verleiht dem Kunstwerk eine luxuriöse und zeitlose Qualität.",
+    "info_ai_en": "AI may struggle to replicate the intricate patterns and textures in 'The Kiss.' Look for any inconsistencies in the gold leaf effect and the way the figures are rendered, which may indicate the work of AI.",
+    "info_ai_de": "Die KI könnte Schwierigkeiten haben, die komplexen Muster und Texturen in ‚Der Kuss‘ zu replizieren. Achte auf Unstimmigkeiten im Blattgold-Effekt und in der Darstellung der Figuren, die auf die Arbeit der KI hinweisen könnten.",
+    "attribution_original": {
+      "author": "Gustav Klimt",
+      "title_de": "Der Kuss",
+      "title_en": "The Kiss",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=38827275"
+  },
+    "attribution_ai": {
+      "full_prompt_en": "Create an AI Image of the painting 'The Kiss' by Gustav Klimt",
+      "full_prompt_de": "Erstelle ein KI-Bild des Gemäldes 'Der Kuss' von Gustav Klimt",
+      "author": "Google",
+      "model": "Gemini (Image Generation)",
+      "version": "Nano Banana Model",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-02-20T15:06:20",
+      "title_de": "KI Der Kuss Interpretation",
+      "title_en": "AI The Kiss Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
   }
+}
 ]
