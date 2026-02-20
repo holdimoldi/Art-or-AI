@@ -862,5 +862,38 @@
       "title_en": "AI The First Steps Interpretation",
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
+  },
+  {
+    "id": 27,
+    "country_en": "Greece",
+    "country_de": "Griechenland",
+    "category_en": "Architecture",
+    "category_de": "Architektur",
+    "image_a_path": "images/Original_Greece_Architecture_The_Parthenon_in_Athens.webp",
+    "image_b_path": "images/AI_Greece_Architecture_The_Parthenon_in_Athen_Gemini.webp",
+    "solution_ai_image": "right",
+    "info_original_en": "The Parthenon in Athens is a famous ancient temple built in the 5th century BC. It was dedicated to the goddess Athena and is known for its beautiful columns and intricate sculptures. The Parthenon is a symbol of ancient Greek culture and architecture.",
+    "info_original_de": "Der Parthenon in Athen ist ein berühmter antiker Tempel, der im 5. Jahrhundert v. Chr. erbaut wurde. Er war der Göttin Athena gewidmet und ist bekannt für seine schönen Säulen und kunstvollen Skulpturen. Der Parthenon ist ein Symbol der antiken griechischen Kultur und Architektur.",
+    "info_ai_en": "AI may struggle to accurately replicate the intricate details and proportions of the Parthenon. Look for any inconsistencies in the columns, sculptures, and overall structure that may indicate the work of AI.",
+    "info_ai_de": "Die KI könnte Schwierigkeiten haben, die komplexen Details und Proportionen des Parthenon genau zu replizieren. Achte auf Unstimmigkeiten in den Säulen, Skulpturen und der Gesamtstruktur, die auf die Arbeit der KI hinweisen könnten.",
+    "attribution_original": {
+      "author": "Steve Swayne",
+      "title_de": "Parthenon in Athen",
+      "title_en": "Parthenon in Athens",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=17065839" 
+    },
+    "attribution_ai": {
+      "full_prompt_en": "Can you create an AI image for me of the Parthenon in Greece? It should look as realistic as possible and generate an image that is close to the original.",
+      "full_prompt_de": "Kannst du mir ein KI Bild von dem Parthenon in Griechenland erstellen. Es soll realistisch wie möglich aussehen und generiere ein Bild was nah am Original ist.",
+      "author": "Google",
+      "model": "Gemini (Image Generation)",
+      "version": "Nano Banana Model",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-02-20T08:39:08",
+      "title_de": "KI Parthenon Interpretation",
+      "title_en": "AI Parthenon Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
+    }
   }
 ]
