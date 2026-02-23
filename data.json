@@ -928,5 +928,38 @@
       "title_en": "AI The Kiss Interpretation",
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
   }
+},
+{
+  "id": 29,
+  "country_en": "Austria",
+  "country_de": "Österreich",
+  "category_en": "Architecture",
+  "category_de": "Architektur",
+  "image_a_path": "images/Original_Austria_Architecture_The_Hundertwasser_House.webp",
+  "image_b_path": "images/AI_Austria_Architecture_The_Hundertwasser_House_Gemini.webp",
+  "solution_ai_image": "right",
+  "info_original_en": "The Hundertwasser House in Vienna, designed by Friedensreich Hundertwasser, is a unique residential building known for its colorful facade and irregular shapes. The building features a mix of vibrant colors, uneven floors, and a rooftop garden, making it a popular tourist attraction and an example of unconventional architecture.",
+  "info_original_de": "Das Hundertwasserhaus in Wien, entworfen von Friedensreich Hundertwasser, ist ein einzigartiges Wohngebäude, das für seine bunte Fassade und unregelmäßigen Formen bekannt ist. Das Gebäude zeichnet sich durch eine Mischung aus lebendigen Farben, unebenen Böden und einem Dachgarten aus, was es zu einer beliebten Touristenattraktion und einem Beispiel für unkonventionelle Architektur macht.",
+  "info_ai_en": "AI may struggle to accurately replicate the vibrant colors and irregular shapes of the Hundertwasser House. Look for any inconsistencies in the facade's design and the way the building's unique features are rendered, which may indicate the work of AI.",
+  "info_ai_de": "Die KI könnte Schwierigkeiten haben, die lebendigen Farben und unregelmäßigen Formen des Hundertwasserhauses genau zu replizieren. Achte auf Unstimmigkeiten im Design der Fassade und in der Darstellung der einzigartigen Merkmale des Gebäudes, die auf die Arbeit der KI hinweisen könnten.",
+  "attribution_original": {
+    "author": "Friedensreich Hundertwasser",
+    "title_de": "Hundertwasserhaus",
+    "title_en": "Hundertwasser House",
+    "license": "Public Domain",
+    "source_url": "https://commons.wikimedia.org/w/index.php?curid=89018540"
+  },
+  "attribution_ai": {
+    "full_prompt_en": "Create an AI Image of the architecture of the Hundertwasser House in Vienna",
+    "full_prompt_de": "Erstelle ein KI-Bild der Architektur des Hundertwasserhauses in Wien",
+    "author": "Google",
+    "model": "Gemini (Image Generation)",
+    "version": "Nano Banana Model",
+    "prompt_author": "Martin Hohlt",
+    "generation_date": "2026-02-23T16:28:44",
+    "title_de": "KI Hundertwasserhaus Interpretation",
+    "title_en": "AI Hundertwasser House Interpretation",
+    "license": "AI Generated (EU AI Act Art. 50 compliant)"
+}
 }
 ]
