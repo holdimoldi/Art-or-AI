@@ -961,5 +961,38 @@
     "title_en": "AI Hundertwasser House Interpretation",
     "license": "AI Generated (EU AI Act Art. 50 compliant)"
 }
+},
+{
+  "id": 30,
+  "country_en": "Denmark",
+  "country_de": "Dänemark",
+  "category_en": "Architecture",
+  "category_de": "Architektur",
+  "image_a_path": "images/Original_Denmark_Architecture_BLOX_Kopenhagen.webp",
+  "image_b_path": "images/AI_Denmark_Architecture_BLOX_Kopenhagen_ChatGPT.webp",
+  "solution_ai_image": "right",
+  "info_original_en": "BLOX in Copenhagen is a modern building that serves as a hub for architecture, design, and urban development. It features a striking facade with large glass windows and a unique geometric design. BLOX is home to the Danish Architecture Center and hosts various exhibitions and events related to architecture and design.",
+  "info_original_de": "BLOX in Kopenhagen ist ein modernes Gebäude, das als Zentrum für Architektur, Design und Stadtentwicklung dient. Es verfügt über eine markante Fassade mit großen Glasfenstern und einem einzigartigen geometrischen Design. BLOX beherbergt das Dänische Architekturzentrum und veranstaltet verschiedene Ausstellungen und Events rund um Architektur und Design.",
+  "info_ai_en": "AI may struggle to accurately replicate the unique geometric design and glass facade of BLOX. Look for any inconsistencies in the building's structure and the way the materials are rendered, which may indicate the work of AI.",
+  "info_ai_de": "Die KI könnte Schwierigkeiten haben, das einzigartige geometrische Design und die Glasfassade von BLOX genau zu replizieren. Achte auf Unstimmigkeiten in der Struktur des Gebäudes und in der Darstellung der Materialien, die auf die Arbeit der KI hinweisen könnten.",
+  "attribution_original": {
+    "author": "BLOX",
+    "title_de": "BLOX in Kopenhagen",
+    "title_en": "BLOX in Copenhagen",
+    "license": "Public Domain",
+    "source_url": "https://commons.wikimedia.org/w/index.php?curid=126048171"
+  },
+  "attribution_ai": {
+    "full_prompt_en": "Create an AI Image of the architecture of BLOX in Copenhagen",
+    "full_prompt_de": "Erstelle ein KI-Bild der Architektur von BLOX in Kopenhagen",
+    "author": "OpenAI",
+    "model": "DALL-E 3 (via ChatGPT)",
+    "version": "OpenAI Image Generation Model (2026)",
+    "prompt_author": "Martin Hohlt",
+    "generation_date": "2026-03-02T13:57:08",
+    "title_de": "KI BLOX Interpretation",
+    "title_en": "AI BLOX Interpretation",
+    "license": "AI Generated (EU AI Act Art. 50 compliant)"
+}
 }
 ]
