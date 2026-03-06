@@ -1060,5 +1060,38 @@
     "title_en": "AI Atomium Interpretation",
     "license": "AI Generated (EU AI Act Art. 50 compliant)"
 }
-}
+},
+{
+  "id": 33,
+  "country_en": "Estonia",
+  "country_de": "Estland",
+  "category_en": "Painting",
+  "category_de": "Gemälde",
+  "image_a_path": "images/Original_Estonia_Painting_Truu_valvur.webp",
+  "image_b_path": "images/AI_Estonia_Painting_Truu_valvur.webp",
+  "solution_ai_image": "right",
+  "info_original_en": "Truu valvur (1878) by Johann Köler: This painting depicts a vigilant guard standing watch, symbolizing protection and vigilance. The use of light and shadow creates a dramatic atmosphere, emphasizing the guard's alertness and dedication to his duty.",
+    "info_original_de": "Truu valvur (1878) von Johann Köler: Dieses Gemälde zeigt einen wachsamen Wächter, der Wache hält und Schutz sowie Wachsamkeit symbolisiert. Die Verwendung von Licht und Schatten schafft eine dramatische Atmosphäre, die die Aufmerksamkeit und Hingabe des Wächters an seine Pflicht betont.",
+    "info_ai_en": "AI may struggle to accurately replicate the artistic style and brushwork of Johann Köler's painting. Look for any inconsistencies in the rendering of the figure and the overall composition, which may indicate the work of AI.",
+    "info_ai_de": "Die KI könnte Schwierigkeiten haben, den künstlerischen Stil und die Pinselstriche von Johann Kölers Malerei genau zu replizieren. Achte auf Unstimmigkeiten in der Darstellung der Figur und der Gesamtkomposition, die auf die Arbeit der KI hinweisen könnten.",
+    "attribution_original": {
+      "author": "Johann Köler",
+      "title_de": "Truu valvur",
+      "title_en": "The Faithful Guardian",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=17888304"
+    },
+    "attribution_ai": {
+      "full_prompt_en": "Create an AI Image of the painting 'Truu valvur' by Johann Köler",
+      "full_prompt_de": "Erstelle ein KI-Bild des Gemäldes 'Truu valvur' von Johann Köler",
+      "author": "OpenAI",
+      "model": "DALL-E 3 (via ChatGPT)",
+      "version": "OpenAI Image Generation Model (2026)",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-03-06T21:37:41",
+      "title_de": "KI Truu valvur Interpretation",
+      "title_en": "AI Truu valvur Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
+    }
+  }
 ]
