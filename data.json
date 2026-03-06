@@ -994,5 +994,38 @@
     "title_en": "AI BLOX Interpretation",
     "license": "AI Generated (EU AI Act Art. 50 compliant)"
 }
+},
+{
+  "id": 31,
+  "country_en": "Belgium",
+  "country_de": "Belgien",
+  "category_en": "Painting",
+  "category_de": "Gemälde",
+  "image_a_path": "images/Original_Belgium_Painting_Émile_Claus_-_Le_pique-nique_(ca._1887).webp",
+  "image_b_path": "images/AI_Belgium_Painting_Émile_Claus_-_Le_pique-nique_(ca._1887)_Gemini.webp",
+  "solution_ai_image": "right",
+  "info_original_en": "'Le pique-nique' (ca. 1887) by Émile Claus: This painting depicts a lively picnic scene with people enjoying food and conversation in a lush outdoor setting. The use of light and color creates a vibrant atmosphere, capturing the joy and relaxation of a day spent in nature.",
+  "info_original_de": "'Le pique-nique' (ca. 1887) von Émile Claus: Diese Malerei zeigt eine lebendige Picknickszene mit Menschen, die sich bei einer üppigen Outdoor-Umgebung über Essen und Unterhaltung freuen. Die Verwendung von Licht und Farbe schafft eine lebendige Atmosphäre, die die Freude und Entspannung eines Tages in der Natur einfängt.",
+  "info_ai_en": "AI may struggle to accurately replicate the artistic style and brushwork of Émile Claus's painting. Look for any inconsistencies in the rendering of the figures and the overall composition, which may indicate the work of AI.",
+  "info_ai_de": "Die KI könnte Schwierigkeiten haben, den künstlerischen Stil und die Pinselstriche von Émile Claus' Malerei genau zu replizieren. Achte auf Unstimmigkeiten in der Darstellung der Figuren und der Gesamtkomposition, die auf die Arbeit der KI hinweisen könnten.",
+  "attribution_original": {
+    "author": "Émile Claus",
+    "title_de": "Le pique-nique",
+    "title_en": "The Picnic",
+    "license": "Public Domain",
+    "source_url": "https://commons.wikimedia.org/w/index.php?curid=72194178"
+  },
+  "attribution_ai": {
+    "full_prompt_en": "Create an AI Image of 'Le pique-nique' (ca. 1887) by Émile Claus",
+    "full_prompt_de": "Erstelle ein KI-Bild von 'Le pique-nique' (ca. 1887) von Émile Claus",
+    "author": "Google",
+    "model": "Gemini (Image Generation)",
+    "version": "Nano Banana Model",
+    "prompt_author": "Martin Hohlt",
+    "generation_date": "2026-03-03T19:16:42",
+    "title_de": "KI Le pique-nique Interpretation",
+    "title_en": "AI Le pique-nique Interpretation",
+    "license": "AI Generated (EU AI Act Art. 50 compliant)"
+}
 }
 ]
