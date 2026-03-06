@@ -1027,5 +1027,38 @@
     "title_en": "AI Le pique-nique Interpretation",
     "license": "AI Generated (EU AI Act Art. 50 compliant)"
 }
+},
+{
+  "id": 32,
+  "country_en": "Belgium",
+  "country_de": "Belgien",
+  "category_en": "Architecture",
+  "category_de": "Architektur",
+  "image_a_path": "images/Original_Belgium_Architecture_Atomium_Brussels.webp",
+  "image_b_path": "images/AI_Belgium_Atomium_Brussels_Gemini.webp",
+  "solution_ai_image": "right",
+  "info_original_en": "The Atomium in Brussels is a unique building designed to resemble an iron crystal magnified 165 billion times. It was built for the 1958 World's Fair and has since become an iconic symbol of Brussels. The structure consists of nine interconnected spheres, with the central sphere serving as a viewing platform offering panoramic views of the city.",
+  "info_original_de": "Das Atomium in Brüssel ist ein einzigartiges Gebäude, das einem Eisenkristall nachempfunden ist, der um das 165 Milliardenfache vergrößert wurde. Es wurde für die Weltausstellung 1958 gebaut und ist seitdem ein ikonisches Symbol von Brüssel geworden. Die Struktur besteht aus neun miteinander verbundenen Kugeln, wobei die zentrale Kugel als Aussichtsplattform dient und einen Panoramablick auf die Stadt bietet.",
+  "info_ai_en": "AI may struggle to accurately replicate the complex geometry and reflective surfaces of the Atomium. Look for any inconsistencies in the structure's design and the way the materials are rendered, which may indicate the work of AI.",
+  "info_ai_de": "Die KI könnte Schwierigkeiten haben, die komplexe Geometrie und die reflektierenden Oberflächen des Atomiums genau zu replizieren. Achte auf Unstimmigkeiten im Design der Struktur und in der Darstellung der Materialien, die auf die Arbeit der KI hinweisen könnten.",
+  "attribution_original": {
+    "author": "Jean-Pol Grandmont",
+    "title_de": "Atomium in Brüssel",
+    "title_en": "Atomium in Brussels",
+    "license": "Public Domain",
+    "source_url": "https://commons.wikimedia.org/w/index.php?curid=45803992"
+  },
+  "attribution_ai": {
+    "full_prompt_en": "Create an AI Image of the architecture of the Atomium in Brussels",
+    "full_prompt_de": "Erstelle ein KI-Bild der Architektur des Atomiums in Brüssel",
+    "author": "Google",
+    "model": "Gemini (Image Generation)",
+    "version": "Nano Banana Model",
+    "prompt_author": "Martin Hohlt",
+    "generation_date": "2026-03-06T21:09:20",
+    "title_de": "KI Atomium Interpretation",
+    "title_en": "AI Atomium Interpretation",
+    "license": "AI Generated (EU AI Act Art. 50 compliant)"
+}
 }
 ]
