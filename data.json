@@ -1159,5 +1159,37 @@
      "title_en": "AI Frühling Interpretation",
      "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
+  },
+  { "id": 36,
+    "country_en": "Latvia",
+    "country_de": "Lettland",
+    "category_en": "Architecture",
+    "category_de": "Architektur",
+    "image_a_path": "images/Original_Latvia_Architecture_House_of_Blackheads_Riga.webp",
+    "image_b_path": "images/AI_Latvia_Architecture_House_of_Blackheads_Riga_Gemini.webp",
+    "solution_ai_image": "right",
+    "info_original_en": "The House of the Black Heads looks like a giant, colorful gingerbread house with a magical blue clock that shows the stars. Originally built in 1334 and decorated in the 1600s by architects like B. Bodecker and L. Jansen, it was rebuilt in 1999. It's bright red walls and golden statues make it one of the most famous and friendly-looking buildings in all of Latvia.",
+    "info_original_de": "Das Haus der Schwarzen Köpfe sieht aus wie ein riesiges, buntes Lebkuchenhaus mit einer magischen blauen Uhr, die die Sterne zeigt. Ursprünglich 1334 erbaut und in den 1600er Jahren von Architekten wie B. Bodecker und L. Jansen dekoriert, wurde es 1999 wieder aufgebaut. Seine leuchtend roten Wände und goldenen Statuen machen es zu einem der berühmtesten und freundlichsten Gebäude in ganz Lettland.",
+    "info_ai_en": "AI may struggle to accurately replicate the intricate details and vibrant colors of the House of the Black Heads. Look for any inconsistencies in the facade's design and the way the materials are rendered, which may indicate the work of AI.",
+    "info_ai_de": "Die KI könnte Schwierigkeiten haben, die komplexen Details und lebendigen Farben des Hauses der Schwarzen Köpfe genau zu replizieren. Achte auf Unstimmigkeiten im Design der Fassade und in der Darstellung der Materialien, die auf die Arbeit der KI hinweisen könnten.",
+    "attribution_original": {
+      "author": "Diliff",
+      "title_de": "Das Haus der Schwarzen Köpfe in Riga",
+      "title_en": "Das Haus der Schwarzen Köpfe in Riga",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=38121629"
+    },
+    "attribution_ai": {
+      "full_prompt_en": "A hyper-realistic, wide-angle photograph of the House of the Black Heads (Melngalvju nams) in Riga, Latvia. The building features a stunning red-brick facade with intricate white stone carvings, gold leaf details, and a large blue astronomical clock on its ornate stepped gable. The scene is set in the cobblestone Town Hall Square during the 'blue hour' of twilight, with warm golden lights illuminating the architectural details. In the foreground, the stone Roland Statue is visible. In the background, the spire of St. Peter's Church reaches into the sky. Cinematic lighting, 8k resolution, shot on a 35mm lens.",
+      "full_prompt_de": "Ein hyperrealistisches, Weitwinkel-Foto des Hauses der Schwarzen Köpfe (Melngalvju nams) in Riga, Lettland. Das Gebäude verfügt über eine atemberaubende rote Backsteinfassade mit kunstvollen weißen Steinschnitzereien, goldenen Details und einer großen blauen astronomischen Uhr an seinem kunstvollen Stufengiebel. Die Szene spielt auf dem gepflasterten Rathausplatz während der 'blauen Stunde' der Dämmerung, mit warmen goldenen Lichtern, die die architektonischen Details beleuchten. Im Vordergrund ist die Steinstatue Roland sichtbar. Im Hintergrund ragt der Turm der St. Peterskirche in den Himmel. Cinematisches Licht, 8k Auflösung, aufgenommen mit einem 35mm Objektiv.",
+      "author": "Google",
+      "model": "Gemini (Image Generation)",
+      "version": "Nano Banana Model",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-03-07T10:32:34",
+      "title_de": "KI House of the Black Heads Interpretation",
+      "title_en": "AI House of the Black Heads Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
   }
+}
 ]
