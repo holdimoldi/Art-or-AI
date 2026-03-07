@@ -1093,5 +1093,38 @@
       "title_en": "AI Truu valvur Interpretation",
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
+  },
+  {
+  "id": 34,
+  "country_en": "Estonia",
+  "country_de": "Estland",
+  "category_en": "Architecture",
+  "category_de": "Architektur",
+  "image_a_path": "images/Original_Estonia_Architecture_Tallinn_Town_Hall.webp",
+  "image_b_path": "images/AI_Estonia_Architecture_Tallinn_Town_Hall_Gemini.webp",
+  "solution_ai_image": "right",
+  "info_original_en": "The Tallinn Town Hall is a historic building located in the heart of Tallinn's Old Town. Built in the 14th century, it is one of the best-preserved medieval town halls in Europe. The building features a distinctive Gothic architecture with a tall spire and intricate details on its facade.",
+    "info_original_de": "Das Rathaus von Tallinn ist ein historisches Gebäude im Herzen der Altstadt von Tallinn. Es wurde im 14. Jahrhundert erbaut und ist eines der am besten erhaltenen mittelalterlichen Rathäuser Europas. Das Gebäude zeichnet sich durch eine markante gotische Architektur mit einem hohen Turm und kunstvollen Details an der Fassade aus.",
+    "info_ai_en": "AI may struggle to accurately replicate the intricate details and proportions of the Tallinn Town Hall. Look for any inconsistencies in the architectural features and the way the materials are rendered, which may indicate the work of AI.",
+    "info_ai_de": "Die KI könnte Schwierigkeiten haben, die komplexen Details und Proportionen des Rathauses von Tallinn genau zu replizieren. Achte auf Unstimmigkeiten in den architektonischen Merkmalen und in der Darstellung der Materialien, die auf die Arbeit der KI hinweisen könnten.",
+    "attribution_original": {
+      "author": "Ivar Leidus",
+      "title_de": "Rathaus von Tallinn",
+      "title_en": "Tallinn Town Hall",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=27968130"
+    },
+    "attribution_ai": {
+      "full_prompt_en": "A hyper-realistic, low-angle photograph of the Tallinn Town Hall (Tallinna raekoda) on a partly cloudy afternoon. The ancient limestone facade faces the expansive cobblestone Town Hall Square. The iconic octagonal tower with its distinctive green copper spire rises sharply into the sky. The square is bustling with a few pedestrians and colorful Hanseatic-era buildings in the background. The textures of the aged stone, old tiles, and patina copper are palpable. Cinematic lighting, shot on a Canon EOS R5.",
+      "full_prompt_de": "Ein hyperrealistisches, aus der Froschperspektive aufgenommenes Foto des Rathauses von Tallinn (Tallinna raekoda) an einem teilweise bewölkten Nachmittag. Die alte Kalksteinfassade blickt auf den weitläufigen gepflasterten Rathausplatz. Der ikonische achteckige Turm mit seiner markanten grünen Kupferspitze ragt scharf in den Himmel. Auf dem Platz herrscht reges Treiben mit einigen Fußgängern und bunten Gebäuden aus der Hansezeit im Hintergrund. Die Texturen des gealterten Steins, der alten Ziegel und des patinierten Kupfers sind spürbar. Cinematisches Licht, aufgenommen mit einer Canon EOS R5.",
+      "author": "Google",
+      "model": "Gemini (Image Generation)",
+      "version": "Nano Banana Model",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-03-07T09:31:48",
+      "title_de": "KI Tallinn Town Hall Interpretation",
+      "title_en": "AI Tallinn Town Hall Interpretation",
+      "license": "AI Generated (EU AI Act Art. 50 compliant)"
+    }
   }
 ]
