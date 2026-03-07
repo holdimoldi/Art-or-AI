@@ -1126,5 +1126,38 @@
       "title_en": "AI Tallinn Town Hall Interpretation",
       "license": "AI Generated (EU AI Act Art. 50 compliant)"
     }
+  },
+  {
+    "id": 35,
+    "country_en": "Latvia",
+    "country_de": "Lettland",
+    "category_en": "Painting",
+    "category_de": "Gemälde",
+    "image_a_path": "images/Original_Latvia_Painting_Vilhelms_Purvītis_-_Early_Spring_-_1898-1899.webp",
+    "image_b_path": "images/AI_Latvia_Painting_Vilhelms_Purvītis_-_Early_Spring_-_1898-1899_ChatGPT.webp",
+    "solution_ai_image": "right",
+    "info_original_en": "Early Spring is a painting by Latvian artist Vilhelms Purvītis, created in 1898-1899. The artwork depicts a serene landscape of early spring, with soft colors and gentle brushstrokes.",
+    "info_original_de": "Frühling ist ein Gemälde des lettischen Künstlers Vilhelms Purvītis, das zwischen 1898 und 1899 entstand. Die Arbeit zeigt ein ruhiges Landschaftsbild vom Frühling, mit sanften Farben und vorsichtigen Pinselstrichen.",
+    "info_ai_en": "AI-generated interpretation of Early Spring by Vilhelms Purvītis. Look for any inconsistencies in the brushwork or color palette that may indicate the work of AI.",
+    "info_ai_de": "KI-generierte Interpretation von Frühling durch Vilhelms Purvītis. Achte auf Unstimmigkeiten in den Pinselstrichen oder der Farbpalette, die auf die Arbeit der KI hinweisen könnten.",
+    "attribution_original": {
+      "author": "Vilhelms Purvītis",
+      "title_de": "Frühling",
+      "title_en": "Early Spring",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=18664512"
+    },
+    "attribution_ai": {
+      "full_prompt_en": "A hyper-realistic, masterful oil painting recreating 'Early Spring (1898-1899)' by Vilhelms Purvītis. The composition captures a tranquil Baltic landscape during the spring thaw. The ground is partially covered in patchworks of melting, slushy snow, yielding to wet, brown earth. A winding stream, half-frozen and reflecting the cool, muted colors of the sky, flows through the center. On the banks are dense clusters of iconic birch trees with their distinctive white and black bark and bare branches. The light is diffused and soft, a cool, silvery-grey and blue sky with soft, layered clouds. The entire scene is rendered with Purvītis' signature technique: delicate, textured impasto brushstrokes that give a tactile quality to the melting snow and bark. The atmosphere is damp, fresh, and serene. The color palette is composed of muted browns, earthy greens, silvery greys, white, and cool blues. Museum lighting, classical landscape art style, visible canvas texture, masterpiece quality.",
+      "full_prompt_de": "Ein hyperrealistisches, meisterhaftes Ölgemälde, das ‚Frühling (1898-1899)‘ von Vilhelms Purvītis neu interpretiert. Die Komposition fängt eine ruhige baltische Landschaft während der Frühlingsschmelze ein. Der Boden ist teilweise mit schmelzendem, matschigem Schnee bedeckt, der dem nassen, braunen Erdreich weicht. Ein gewundener Bach, halb gefroren und die kühlen, gedämpften Farben des Himmels reflektierend, fließt durch die Mitte. An den Ufern stehen dichte Gruppen ikonischer Birken mit ihrer charakteristischen weißen und schwarzen Rinde und kahlen Ästen. Das Licht ist diffus und weich, ein kühler, silbrig-grauer und blauer Himmel mit weichen, geschichteten Wolken. Die gesamte Szene wird mit Purvītis' charakteristischer Technik gerendert: zarte, strukturierte Impasto-Pinselstriche, die eine taktile Qualität für den schmelzenden Schnee und die Rinde verleihen. Die Atmosphäre ist feucht, frisch und ruhig. Die Farbpalette besteht aus gedämpften Brauntönen, erdigen Grüntönen, silbrig-grauen Tönen, Weiß und kühlen Blautönen. Museumsbeleuchtung, klassischer Landschaftskunststil, sichtbare Leinwandstruktur, Meisterwerkqualität.",
+      "author": "OpenAI",
+      "model": "DALL-E 3 (via ChatGPT)",
+      "version": "OpenAI Image Generation Model (2026)",
+      "prompt_author": "Martin Hohlt",
+      "generation_date": "2026-03-07T10:12:33",
+      "title_de": "KI Frühling Interpretation",
+     "title_en": "AI Frühling Interpretation",
+     "license": "AI Generated (EU AI Act Art. 50 compliant)"
+    }
   }
 ]
